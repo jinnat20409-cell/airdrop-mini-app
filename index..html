@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airdrop Mini App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Airdrop Mini App</h1>
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+    </header>
+
+    <main>
+        <section id="userSection" style="display:none;">
+            <p>Welcome, <span id="userName"></span>!</p>
+            <p>Your referral link:</p>
+            <input type="text" id="refLink" readonly>
+        </section>
+
+        <section>
+            <h2>Available Airdrops</h2>
+            <div id="airdropList">
+                <!-- Airdrop items will load here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
